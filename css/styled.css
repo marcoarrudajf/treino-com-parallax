@@ -178,26 +178,55 @@ footer{
     height: 80px;
 }
 
+/* BOTÃO VOLTAR SCROLL */
+.btn-scroll{
+    z-index: 999;
+    position: fixed;
+    border: none;
+    background: #052c3f;
+    color:#fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 30px 30px 0 30px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.btn-scroll:hover{
+    background-color: #36f;
+}
+.btn-scroll.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 @media(max-width:1350px){
     /* CONTATOS */
-.contato-icon{
-    font-size: 5rem;
-}
-.contato-icon:hover{
-    font-size: 6rem;
-}
-.info{
-    padding: 20px 10px;
-}
-.info h3{
-    font-size: 1.3rem;
-}
-.info span a{
-    font-size: 1.1rem;
-}
-.info span a:hover{
-    font-size: 1rem;
-}
+    .contato-icon{
+        font-size: 5rem;
+    }
+    .contato-icon:hover{
+        font-size: 6rem;
+    }
+    .info{
+        padding: 20px 10px;
+    }
+    .info h3{
+        font-size: 1.3rem;
+    }
+    .info span a{
+        font-size: 1.1rem;
+    }
+    .info span a:hover{
+        font-size: 1rem;
+    }
 }
 @media(max-width:980px){
     /* CONTATOS */
@@ -277,33 +306,4 @@ footer{
         font-size: 1rem;
     }
 
-}
-
-.btn-scroll{
-    z-index: 999;
-    position: fixed;
-    border: none;
-    background: #052c3f;
-    color:#fff;
-    width: 45px;
-    height: 45px;
-    right: 0;
-    bottom: 10px;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 45px;
-    border-radius: 30px 30px 0 30px;
-    cursor: pointer;
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-.btn-scroll:hover{
-    background-color: #36f;
-}
-
-.btn-scroll.active{
-    right: 20px;
-    opacity: 1;
-    pointer-events: auto;
 }
